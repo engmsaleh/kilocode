@@ -14,6 +14,7 @@ import {
 	EVALS_SETTINGS,
 } from "@roo-code/types"
 import { IpcClient } from "@roo-code/ipc"
+import { loadCliConfig } from "../../../../src/cli/config.ts"
 
 import {
 	type Run,
@@ -302,11 +303,15 @@ export const runTask = async ({ run, task, publish, logger }: RunTaskOptions) =>
 		isClientDisconnected = true
 	})
 
+	const workspaceRoot = process.env.KILOCODE_WORKSPACE_ROOT || process.cwd()
+	const cliConfig = await loadCliConfig(workspaceRoot).catch(() => ({}))
+
 	client.sendCommand({
 		commandName: TaskCommandName.StartNewTask,
 		data: {
 			configuration: {
 				...EVALS_SETTINGS,
+				...cliConfig,
 				openRouterApiKey: process.env.OPENROUTER_API_KEY,
 				...run.settings, // Allow the provided settings to override `openRouterApiKey`.
 			},
