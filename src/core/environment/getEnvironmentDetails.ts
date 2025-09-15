@@ -1,7 +1,8 @@
 import path from "path"
 import os from "os"
 
-import * as vscode from "vscode"
+// Use adapter to allow running outside of VS Code
+import * as vscode from "../../adapters/vscode"
 import pWaitFor from "p-wait-for"
 import delay from "delay"
 

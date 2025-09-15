@@ -1,4 +1,5 @@
-import * as vscode from "vscode"
+// Pull VS Code APIs via adapter
+import * as vscode from "../../adapters/vscode"
 
 import { Task } from "../task/Task"
 import { CodeIndexManager } from "../../services/code-index/manager"

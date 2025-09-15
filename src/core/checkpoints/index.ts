@@ -1,5 +1,6 @@
 import pWaitFor from "p-wait-for"
-import * as vscode from "vscode"
+// Adapter import for VS Code API
+import * as vscode from "../../adapters/vscode"
 
 import { TelemetryService } from "@roo-code/telemetry"
 

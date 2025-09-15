@@ -1,6 +1,7 @@
 import path from "path"
 import delay from "delay"
-import * as vscode from "vscode"
+// Adapter import so CLI can run without VS Code
+import * as vscode from "../../adapters/vscode"
 import fs from "fs/promises"
 
 import { Task } from "../task/Task"

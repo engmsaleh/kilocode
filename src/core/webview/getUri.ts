@@ -1,4 +1,5 @@
-import { Uri, Webview } from "vscode"
+// Get Uri/Webview types via adapter
+import { Uri, Webview } from "../../adapters/vscode"
 /**
  * A helper function which will get the webview URI of a given file or resource.
  *

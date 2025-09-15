@@ -1,4 +1,5 @@
-import * as vscode from "vscode"
+// Adapter import for VS Code API
+import * as vscode from "../../adapters/vscode"
 import { JETBRAIN_PRODUCTS, KiloCodeWrapperProperties } from "../../shared/kilocode/wrapper"
 
 export const getKiloCodeWrapperProperties = (): KiloCodeWrapperProperties => {

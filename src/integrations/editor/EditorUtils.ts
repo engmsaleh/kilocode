@@ -1,4 +1,5 @@
-import * as vscode from "vscode"
+// Adapter import to remove direct dependency on VS Code
+import * as vscode from "../../adapters/vscode"
 import * as path from "path"
 
 /**

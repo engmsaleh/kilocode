@@ -1,4 +1,4 @@
-import { ExtensionContext } from "vscode"
+import type { ExtensionContext } from "../../../adapters/vscode"
 import { ProviderProfiles } from "../ProviderSettingsManager"
 
 export async function migrateMorphApiKey(context: ExtensionContext, providerProfiles: ProviderProfiles) {

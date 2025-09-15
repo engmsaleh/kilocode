@@ -1,4 +1,5 @@
-import * as vscode from "vscode"
+// Access VS Code APIs via adapter
+import * as vscode from "../../adapters/vscode"
 import * as path from "path"
 import * as fs from "fs/promises"
 import { convertTheme } from "monaco-vscode-textmate-theme-converter/lib/cjs"

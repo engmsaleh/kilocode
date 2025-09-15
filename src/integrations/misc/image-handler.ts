@@ -1,6 +1,7 @@
 import * as path from "path"
 import * as os from "os"
-import * as vscode from "vscode"
+// Use adapter so code can run outside VS Code
+import * as vscode from "../../adapters/vscode"
 import { getWorkspacePath } from "../../utils/path"
 import { t } from "../../i18n"
 

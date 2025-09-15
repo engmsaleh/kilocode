@@ -1,4 +1,5 @@
-import * as vscode from "vscode"
+// Access VS Code APIs via adapter
+import * as vscode from "../../adapters/vscode"
 
 const fadedOverlayDecorationType = vscode.window.createTextEditorDecorationType({
 	backgroundColor: "rgba(255, 255, 0, 0.1)",

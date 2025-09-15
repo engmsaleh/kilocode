@@ -1,5 +1,6 @@
 import delay from "delay"
-import * as vscode from "vscode"
+// Adapter import for potential CLI usage
+import * as vscode from "../../adapters/vscode"
 
 import { TodoItem } from "@roo-code/types"
 

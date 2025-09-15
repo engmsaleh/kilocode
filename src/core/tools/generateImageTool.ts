@@ -1,6 +1,7 @@
 import path from "path"
 import fs from "fs/promises"
-import * as vscode from "vscode"
+// Use adapter for VS Code APIs
+import * as vscode from "../../adapters/vscode"
 import { Task } from "../task/Task"
 import { formatResponse } from "../prompts/responses"
 import { ToolUse, AskApproval, HandleError, PushToolResult, RemoveClosingTag } from "../../shared/tools"

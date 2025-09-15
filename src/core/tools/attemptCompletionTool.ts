@@ -1,5 +1,6 @@
 import Anthropic from "@anthropic-ai/sdk"
-import * as vscode from "vscode"
+// Import via adapter to support CLI usage
+import * as vscode from "../../adapters/vscode"
 
 import { RooCodeEventName } from "@roo-code/types"
 import { TelemetryService } from "@roo-code/telemetry"

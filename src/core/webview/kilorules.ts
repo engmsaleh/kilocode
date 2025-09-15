@@ -1,7 +1,8 @@
 import os from "os"
 import * as path from "path"
 import fs from "fs/promises"
-import * as vscode from "vscode"
+// Adapter import to isolate VS Code dependency
+import * as vscode from "../../adapters/vscode"
 import { fileExistsAtPath } from "../../utils/fs"
 import { openFile } from "../../integrations/misc/open-file"
 import { getWorkspacePath } from "../../utils/path"

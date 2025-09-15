@@ -8,7 +8,8 @@ import { ensureLocalKilorulesDirExists } from "../context/instructions/kilo-rule
 import { parseKiloSlashCommands } from "../slash-commands/kilo"
 import { refreshWorkflowToggles } from "../context/instructions/workflows" // kilocode_change
 
-import * as vscode from "vscode" // kilocode_change
+// Adapter import replaces direct VS Code dependency
+import * as vscode from "../../adapters/vscode" // kilocode_change
 
 // This function is a duplicate of processUserContentMentions, but it adds a check for the newrules command
 // and processes Kilo-specific slash commands. It should be merged with processUserContentMentions in the future.

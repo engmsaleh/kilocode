@@ -1,7 +1,8 @@
 import { Task } from "../task/Task"
 import { ClineProvider } from "./ClineProvider"
 import { saveTaskMessages } from "../task-persistence"
-import * as vscode from "vscode"
+// Adapter import for VS Code APIs
+import * as vscode from "../../adapters/vscode"
 import pWaitFor from "p-wait-for"
 import { t } from "../../i18n"
 

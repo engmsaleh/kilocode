@@ -1,4 +1,5 @@
-import * as vscode from "vscode"
+// Use VS Code adapter so CLI can substitute its own implementation
+import * as vscode from "../../adapters/vscode"
 
 import { arePathsEqual } from "../../utils/path"
 

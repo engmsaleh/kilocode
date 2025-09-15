@@ -1,5 +1,6 @@
 import * as path from "path"
-import * as vscode from "vscode"
+// Use adapter for VS Code APIs
+import * as vscode from "../../adapters/vscode"
 import { GlobalFileNames } from "../../../shared/globalFileNames"
 
 export async function createModeInstructions(context: vscode.ExtensionContext | undefined): Promise<string> {
