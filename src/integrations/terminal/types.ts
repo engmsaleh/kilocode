@@ -1,6 +1,6 @@
 import EventEmitter from "events"
 
-export type RooTerminalProvider = "vscode" | "execa"
+export type RooTerminalProvider = "vscode" | "execa" | "cli"
 
 export interface RooTerminal {
 	provider: RooTerminalProvider
