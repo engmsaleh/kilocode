@@ -6,6 +6,7 @@ import { RooTerminal, RooTerminalProvider } from "./types"
 import { TerminalProcess } from "./TerminalProcess"
 import { Terminal } from "./Terminal"
 import { ExecaTerminal } from "./ExecaTerminal"
+import { CLITerminal } from "./CLITerminal"
 import { ShellIntegrationManager } from "./ShellIntegrationManager"
 
 // Although vscode.window.terminals provides a list of all open terminals,
@@ -132,6 +133,8 @@ export class TerminalRegistry {
 
 		if (provider === "vscode") {
 			newTerminal = new Terminal(this.nextTerminalId++, undefined, cwd)
+		} else if (provider === "cli") {
+			newTerminal = new CLITerminal(this.nextTerminalId++, cwd)
 		} else {
 			newTerminal = new ExecaTerminal(this.nextTerminalId++, cwd)
 		}
