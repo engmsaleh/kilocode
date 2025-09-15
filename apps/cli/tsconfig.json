@@ -1,0 +1,15 @@
+{
+	"extends": "@roo-code/config-typescript/base.json",
+	"compilerOptions": {
+		"outDir": "dist",
+		"rootDir": "src",
+		"baseUrl": "./",
+		"allowImportingTsExtensions": true,
+		"paths": {
+			"@roo-code/telemetry": ["../../packages/telemetry/src/index.ts"],
+			"@roo-code/types": ["../../packages/types/src/index.ts"]
+		}
+	},
+	"include": ["src"],
+	"exclude": ["node_modules"]
+}
