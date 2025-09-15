@@ -1,4 +1,5 @@
-import * as vscode from "vscode"
+// Use adapter to abstract VS Code API access
+import * as vscode from "../../adapters/vscode"
 import * as path from "path"
 import deepEqual from "fast-deep-equal"
 

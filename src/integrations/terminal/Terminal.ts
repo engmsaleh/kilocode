@@ -1,4 +1,5 @@
-import * as vscode from "vscode"
+// Adapter import to abstract VS Code dependencies
+import * as vscode from "../../adapters/vscode"
 import pWaitFor from "p-wait-for"
 
 import type { RooTerminalCallbacks, RooTerminalProcessResultPromise } from "./types"

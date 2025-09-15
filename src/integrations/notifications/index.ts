@@ -1,6 +1,7 @@
 import { execa } from "execa"
 import * as os from "os"
-import * as vscode from "vscode"
+// Adapter allows fallback for CLI environments
+import * as vscode from "../../adapters/vscode"
 
 interface NotificationOptions {
 	title?: string

@@ -1,6 +1,7 @@
 import * as path from "path"
 import * as os from "os"
-import * as vscode from "vscode"
+// Use VS Code adapter so CLI can provide its own implementation
+import * as vscode from "../../adapters/vscode"
 import { arePathsEqual, getWorkspacePath } from "../../utils/path"
 import { t } from "../../i18n"
 

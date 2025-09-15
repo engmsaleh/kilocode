@@ -1,6 +1,7 @@
 import fs from "fs/promises"
 import * as path from "path"
-import * as vscode from "vscode"
+// Import via VS Code adapter for CLI compatibility
+import * as vscode from "../../adapters/vscode"
 
 import delay from "delay"
 

@@ -1,4 +1,5 @@
-import * as vscode from "vscode"
+// Use adapter to access VS Code APIs in extension or CLI
+import * as vscode from "../../adapters/vscode"
 import fs from "fs/promises"
 import * as path from "path"
 

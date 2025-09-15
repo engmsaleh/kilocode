@@ -3,7 +3,8 @@ import os from "os"
 import * as path from "path"
 import fs from "fs/promises"
 
-import * as vscode from "vscode"
+// Use adapter for VS Code API
+import * as vscode from "../../adapters/vscode"
 import { z, ZodError } from "zod"
 
 import { globalSettingsSchema } from "@roo-code/types"

@@ -1,4 +1,5 @@
-import * as vscode from "vscode"
+// Adapter import to decouple from VS Code
+import * as vscode from "../../adapters/vscode"
 import * as os from "os"
 
 import type {

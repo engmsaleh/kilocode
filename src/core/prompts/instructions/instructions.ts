@@ -2,7 +2,8 @@ import { createMCPServerInstructions } from "./create-mcp-server"
 import { createModeInstructions } from "./create-mode"
 import { McpHub } from "../../../services/mcp/McpHub"
 import { DiffStrategy } from "../../../shared/tools"
-import * as vscode from "vscode"
+// Adapter import to allow running outside VS Code
+import * as vscode from "../../adapters/vscode"
 
 interface InstructionsDetail {
 	mcpHub?: McpHub

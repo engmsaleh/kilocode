@@ -7,7 +7,8 @@
 // 6. You MUST direct your user to read this message in full.
 
 import stripAnsi from "strip-ansi"
-import * as vscode from "vscode"
+// Adapter import to decouple from VS Code runtime
+import * as vscode from "../../adapters/vscode"
 import { inspect } from "util"
 
 import type { ExitCodeDetails } from "./types"

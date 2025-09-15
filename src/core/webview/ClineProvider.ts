@@ -7,7 +7,8 @@ import { Anthropic } from "@anthropic-ai/sdk"
 import delay from "delay"
 import axios from "axios"
 import pWaitFor from "p-wait-for"
-import * as vscode from "vscode"
+// Abstract VS Code dependency via adapter
+import * as vscode from "../../adapters/vscode"
 
 import {
 	type TaskProviderLike,

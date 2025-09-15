@@ -1,7 +1,8 @@
 import fs from "fs/promises"
 import * as path from "path"
 
-import * as vscode from "vscode"
+// Import through adapter so CLI can run without VS Code
+import * as vscode from "../../adapters/vscode"
 import { isBinaryFile } from "isbinaryfile"
 
 import { mentionRegexGlobal, commandRegexGlobal, unescapeSpaces } from "../../shared/context-mentions"

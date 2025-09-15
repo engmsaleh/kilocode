@@ -1,4 +1,5 @@
-import * as vscode from "vscode"
+// Adapter import to allow CLI compatibility
+import * as vscode from "../../adapters/vscode"
 import * as path from "path"
 import * as fs from "fs/promises"
 import * as os from "os"

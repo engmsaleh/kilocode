@@ -1,6 +1,7 @@
 import * as path from "path"
 
-import * as vscode from "vscode"
+// Pull VS Code APIs via adapter for CLI compatibility
+import * as vscode from "../../adapters/vscode"
 
 export class ShellIntegrationManager {
 	public static terminalTmpDirs: Map<number, string> = new Map()

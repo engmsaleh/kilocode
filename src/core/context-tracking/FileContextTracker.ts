@@ -1,6 +1,7 @@
 import { safeWriteJson } from "../../utils/safeWriteJson"
 import * as path from "path"
-import * as vscode from "vscode"
+// Adapter import for VS Code APIs
+import * as vscode from "../../adapters/vscode"
 import { getTaskDirectoryPath } from "../../utils/storage"
 import { GlobalFileNames } from "../../shared/globalFileNames"
 import { fileExistsAtPath } from "../../utils/fs"

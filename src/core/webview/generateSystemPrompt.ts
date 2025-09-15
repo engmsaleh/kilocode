@@ -1,4 +1,5 @@
-import * as vscode from "vscode"
+// Import VS Code API via adapter
+import * as vscode from "../../adapters/vscode"
 import { WebviewMessage } from "../../shared/WebviewMessage"
 import { defaultModeSlug, getModeBySlug, getGroupName } from "../../shared/modes"
 import { buildApiHandler } from "../../api"

@@ -3,7 +3,8 @@ import { getCheckpointService } from ".."
 import { DIFF_VIEW_URI_SCHEME } from "../../../integrations/editor/DiffViewProvider"
 import { Task } from "../../task/Task"
 import { t } from "../../../i18n"
-import * as vscode from "vscode"
+// Adapter import to allow CLI fallback
+import * as vscode from "../../../adapters/vscode"
 import { CommitRange } from "@roo-code/types"
 
 function findLast<T>(array: Array<T>, predicate: (value: T, index: number, obj: T[]) => boolean): number {

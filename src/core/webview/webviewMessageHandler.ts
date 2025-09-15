@@ -3,7 +3,8 @@ import * as path from "path"
 import * as os from "os"
 import * as fs from "fs/promises"
 import pWaitFor from "p-wait-for"
-import * as vscode from "vscode"
+// Use adapter to access VS Code APIs
+import * as vscode from "../../adapters/vscode"
 import axios from "axios" // kilocode_change
 import { getKiloBaseUriFromToken } from "../../shared/kilocode/token" // kilocode_change
 import { ProfileData, SeeNewChangesPayload } from "../../shared/WebviewMessage" // kilocode_change

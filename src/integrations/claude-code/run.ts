@@ -1,4 +1,5 @@
-import * as vscode from "vscode"
+// Import VS Code via adapter for optional CLI use
+import * as vscode from "../../adapters/vscode"
 import type Anthropic from "@anthropic-ai/sdk"
 import { execa } from "execa"
 import { ClaudeCodeMessage } from "./types"

@@ -1,4 +1,5 @@
-import * as vscode from "vscode"
+// Import VS Code APIs through adapter layer
+import * as vscode from "../../adapters/vscode"
 import * as path from "path"
 
 import { listFiles } from "../../services/glob/list-files"

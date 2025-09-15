@@ -1,4 +1,5 @@
-import * as vscode from "vscode"
+// Use adapter for VS Code APIs
+import * as vscode from "../../../adapters/vscode"
 import pWaitFor from "p-wait-for"
 import { ClineProvider } from "../../webview/ClineProvider"
 import { t } from "../../../i18n"

@@ -1,5 +1,6 @@
 import * as path from "path"
-import * as vscode from "vscode"
+// Import VS Code API through adapter
+import * as vscode from "../../adapters/vscode"
 import { promises as fs } from "fs"
 
 import type { ModeConfig } from "@roo-code/types"

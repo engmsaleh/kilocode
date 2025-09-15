@@ -3,7 +3,8 @@ import { Task } from "../task/Task"
 import { checkpointSave } from "../checkpoints"
 import { createAndOpenGitHubIssue } from "../../utils/github-url-utils"
 import { formatResponse } from "../prompts/responses"
-import * as vscode from "vscode"
+// Import VS Code through adapter for CLI support
+import * as vscode from "../../adapters/vscode"
 import * as os from "os"
 
 export async function reportBugTool(

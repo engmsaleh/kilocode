@@ -1,5 +1,6 @@
 import * as path from "path"
-import * as vscode from "vscode"
+// Adapter import to allow running outside VS Code
+import * as vscode from "../../adapters/vscode"
 import os from "os"
 import crypto from "crypto"
 import EventEmitter from "events"
