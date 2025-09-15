@@ -18,9 +18,14 @@ const main = async () => {
 				ci: flag({ type: boolean, long: "ci", defaultValue: () => false }),
 				runId: option({ type: number, long: "runId", short: "r", defaultValue: () => -1 }),
 				taskId: option({ type: number, long: "taskId", short: "t", defaultValue: () => -1 }),
+				project: option({ type: String, long: "project", defaultValue: () => "" }),
+				cwd: option({ type: String, long: "cwd", defaultValue: () => "" }),
 			},
 			handler: async (args) => {
-				const { runId, taskId, ci } = args
+				const { runId, taskId, ci, project, cwd } = args
+
+				const workspaceRoot = project || cwd || process.cwd()
+				process.env.KILOCODE_WORKSPACE_ROOT = workspaceRoot
 
 				try {
 					if (ci) {
