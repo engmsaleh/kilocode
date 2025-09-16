@@ -44,6 +44,10 @@
 		},
 		"playwright": {
 			"cache": false
+		},
+		"@roo-code/cli#build": {
+			"outputs": ["dist/**"],
+			"inputs": ["src/**", "package.json", "tsconfig.json", "esbuild.mjs", "README.md"]
 		}
 	}
 }

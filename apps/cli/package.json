@@ -1,0 +1,22 @@
+{
+	"name": "@roo-code/cli",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"bin": {
+		"kilocode": "./dist/index.js"
+	},
+	"scripts": {
+		"dev": "node esbuild.mjs --watch",
+		"build": "node esbuild.mjs --production",
+		"check-types": "tsc --noEmit",
+		"clean": "rimraf dist .turbo"
+	},
+	"devDependencies": {
+		"@roo-code/config-typescript": "workspace:^",
+		"@types/node": "^24.1.0",
+		"esbuild": "^0.25.0",
+		"rimraf": "^6.0.1",
+		"typescript": "^5.4.5"
+	}
+}
